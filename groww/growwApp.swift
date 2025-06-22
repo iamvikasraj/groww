@@ -11,7 +11,7 @@ import SwiftUI
 struct growwApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
