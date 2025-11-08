@@ -4,6 +4,7 @@ struct HeaderView: View {
     let title: String
     let showMarketIndices: Bool
     let marketIndices: [MarketIndex]
+    @EnvironmentObject var router: NavigationRouter
     
     init(title: String, showMarketIndices: Bool = true, marketIndices: [MarketIndex] = []) {
         self.title = title
@@ -47,7 +48,10 @@ struct HeaderView: View {
                             NiftyCardView(
                                 title: index.title,
                                 label: index.value,
-                                highlightedText: index.change
+                                highlightedText: index.change,
+                                onTap: {
+                                    router.navigate(to: .niftyDetail(index: index.title))
+                                }
                             )
                         }
                     }

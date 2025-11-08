@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct StocksView: View {
+    @EnvironmentObject var router: NavigationRouter
+    
     var body: some View {
         ScrollView {
             LazyVStack(pinnedViews: [.sectionHeaders]) {
@@ -22,12 +24,18 @@ struct StocksView: View {
                             SquareCardView(
                                 title: "RattanIndia Power",
                                 label: "$13",
-                                highlightedText: "+1.14%(8.94%)"
+                                highlightedText: "+1.14%(8.94%)",
+                                onTap: {
+                                    router.navigate(to: .stockDetail(symbol: "RATTANINDIA"))
+                                }
                             )
                             SquareCardView(
                                 title: "RattanIndia Power",
                                 label: "$13",
-                                highlightedText: "+1.14%(8.94%)"
+                                highlightedText: "+1.14%(8.94%)",
+                                onTap: {
+                                    router.navigate(to: .stockDetail(symbol: "RATTANINDIA"))
+                                }
                             )
                         }
                         
@@ -35,12 +43,18 @@ struct StocksView: View {
                             SquareCardView(
                                 title: "RattanIndia Power",
                                 label: "$13",
-                                highlightedText: "+1.14%(8.94%)"
+                                highlightedText: "+1.14%(8.94%)",
+                                onTap: {
+                                    router.navigate(to: .stockDetail(symbol: "RATTANINDIA"))
+                                }
                             )
                             SquareCardView(
                                 title: "RattanIndia Power",
                                 label: "$13",
-                                highlightedText: "+1.14%(8.94%)"
+                                highlightedText: "+1.14%(8.94%)",
+                                onTap: {
+                                    router.navigate(to: .stockDetail(symbol: "RATTANINDIA"))
+                                }
                             )
                         }
                        
