@@ -30,9 +30,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		32F89FEA2E06822000400D55 /* groww */ = {
+		32F89FEA2E06822000400D55 /* Groww */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = groww;
+			path = Groww;
 			sourceTree = "<group>";
 		};
 		32F89FF82E06822200400D55 /* growwTests */ = {
@@ -75,7 +75,7 @@
 		32F89FDF2E06822000400D55 = {
 			isa = PBXGroup;
 			children = (
-				32F89FEA2E06822000400D55 /* groww */,
+				32F89FEA2E06822000400D55 /* Groww */,
 				32F89FF82E06822200400D55 /* growwTests */,
 				32F8A0022E06822200400D55 /* growwUITests */,
 				32F89FE92E06822000400D55 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				32F89FEA2E06822000400D55 /* groww */,
+				32F89FEA2E06822000400D55 /* Groww */,
 			);
 			name = groww;
 			packageProductDependencies = (
